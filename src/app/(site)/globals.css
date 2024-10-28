@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #010101;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  html {
+    font-size: 12px;
+    @media (min-width: 360px) {
+      font-size: 14px;
+    }
+    @media (min-width: 414px) {
+      font-size: 16px;
+    }
+    @media (min-width: 640px) {
+      font-size: 16px;
+    }
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 16px;
+    }
+    @media (min-width: 1280px) {
+      font-size: 16px;
+    }
+    @media (min-width: 1536px) {
+      font-size: 16px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 16px;
+    }
+    @media (min-width: 2560px) {
+      font-size: 18px;
+    }
+    @media (min-width: 3840px) {
+      font-size: 32px;
+    }
+    @media (min-width: 5120px) {
+      font-size: 43px;
+    }
+  }
+}
