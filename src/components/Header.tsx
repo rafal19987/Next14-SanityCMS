@@ -31,7 +31,7 @@ export const Header: React.FC<{ children?: React.ReactNode }> = ({
         isScrolled ? "bg-black" : "bg-transparent"
       }`}
     >
-      <div className="flex w-full max-w-7xl items-center justify-between">
+      <div className="container flex w-full max-w-7xl items-center justify-between">
         <Link
           href="/"
           className="font-exo text-3xl font-bold leading-none text-white transition-all duration-150 hover:text-[#C59D5F]"
